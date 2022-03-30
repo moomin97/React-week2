@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+
+
+.InputBox {
+  margin-right: 210px;
+  width: 300px;
+  height: 30px;
+  background-color: aliceblue;
+  border: none;
+  border-bottom:2px solid slateblue;
+  outline: none;
+}
+
+.saveButton {
+  margin-top: 70px;
+  width: 200px;
+  height: 40px;
+  background-color: slateblue;
+  border: none;
+  color: white;
+  font-size: 15px;
+};
+
+.pp {
+  margin: 10px;
+}
