@@ -4,20 +4,33 @@ import styled from 'styled-components';
 import './App.css';
 import { useRef } from 'react';
 import { useDispatch } from 'react-redux';
-import { createWord } from './redux/modules/Word';
+import { createWord, loadWordFB, addWordFB } from './redux/modules/Word';
 const Detail = (props) => {
+    //     React.useEffect(() => {
+    //   dispatch(loadWordFB());
+    // }, [dispatch]);
+
     const history = useHistory();
-    const dispatch = useDispatch();
+    const dispatch = useDispatch(); 
     const inputWord = useRef(null);
     const inputSul = useRef(null);
     const inputEx = useRef(null);
+
     const addText = () => {
-        dispatch(createWord({
+        dispatch(addWordFB({
             inputWord:inputWord.current.value,
             inputSul:inputSul.current.value,
-            inputEx:inputEx.current.value,}));
-        history.goBack("/");
-    };
+            inputEx:inputEx.current.value,})
+            );
+            history.goBack("/");
+        };
+
+        // dispatch(createWord({
+
+            // inputWord:inputWord.current.value,
+            // inputSul:inputSul.current.value,
+            // inputEx:inputEx.current.value,}));
+
     
     return (
         <DetailModal>
