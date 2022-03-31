@@ -61,3 +61,13 @@
 .pp {
   margin: 10px;
 }
+
+.De {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border: transparent;
+  position: relative;
+  left: 290px;
+  
+}

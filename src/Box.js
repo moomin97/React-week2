@@ -24,6 +24,7 @@ const Box = (props) => {
             {data&&data.map((list, index) => {
                 return (
                 <BoxStyle key={index}>
+                  <button className='De'></button>
                     <PP>단어</PP>
                     <BoxInText>{list.inputWord}</BoxInText>
                     <PP>설명</PP>
